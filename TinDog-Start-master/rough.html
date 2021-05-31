@@ -2,6 +2,27 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      #example1 {
+        box-sizing: content-box;
+        width: 800px;
+        height: 100px;
+        padding: 30px;
+        background: pink;
+        border: 10px solid blue;
+
+        overflow: scroll;
+      }
+
+      #example2 {
+        box-sizing: border-box;
+        width: 800px;
+        height: 100px;
+        padding: 30px;
+        background: pink;
+        border: 10px solid blue;
+      }
+    </style>
   </head>
   <body>
     <button id="button" type="button">Submit</button>
@@ -9,5 +30,56 @@
       <input type="search" name="sintin" />
       <input type="submit" />
     </form>
+    <h1>The box-sizing Property</h1>
+    <p>
+      Defines how the width and height of an element are calculated: should they
+      include padding and borders, or not.
+    </p>
+
+    <h2>box-sizing: content-box (default):</h2>
+    <p>Width and height only apply to the content of the element:</p>
+    <div id="example1">
+      This div has a width of 300px. But the full width is 300px + 20px (left
+      and right border) + 60px (left and right padding) = 380px! Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Harum vitae dignissimos
+      cupiditate quia officia temporibus aut maiores, laborum quam minima
+      accusamus quo, tempore distinctio architecto, nobis ut eaque esse tempora
+      et soluta exercitationem excepturi dicta itaque eius? Tempore tenetur enim
+      provident id voluptates dignissimos numquam minima? Similique, dolorum.
+      Sit excepturi deleniti quia maiores. Ab, dolorum tempora in mollitia
+      accusantium iusto quia cupiditate ea ut delectus aspernatur ipsum ex
+      temporibus eaque magnam quisquam id aperiam quam. Perspiciatis pariatur
+      distinctio sed labore possimus, ipsa iusto iure velit voluptatum corrupti!
+      Incidunt ullam tempora rem porro soluta sed, consequuntur optio quidem
+      nisi dolore itaque dolor quam facilis! Repellendus nostrum corrupti nam
+      officiis inventore alias ea nesciunt magnam ex? Nisi id itaque enim
+      repudiandae debitis sed illo hic, temporibus, doloremque fuga minima nam
+      sint odio perferendis quae ullam tenetur ad a esse eos consectetur, culpa
+      eum. Cum rerum distinctio pariatur porro soluta, obcaecati consequuntur
+      eum quia reprehenderit quos magni quidem tenetur enim suscipit
+      consectetur. Odio eveniet porro, voluptate cumque veritatis doloribus
+      culpa? Numquam doloremque atque cupiditate consectetur illo ut quas vitae
+      consequuntur, hic, molestiae possimus nostrum omnis debitis quis natus
+      unde incidunt, quasi eos modi. Ducimus corporis aperiam quos nam assumenda
+      fugit incidunt culpa accusantium corrupti doloremque saepe, numquam at
+      libero necessitatibus commodi vero facilis debitis. Tempore sed est
+      blanditiis id voluptates veritatis sunt voluptatem inventore, facilis nemo
+      dolores, architecto laborum officia enim quidem magni quis maxime!
+      Nesciunt eligendi magni porro temporibus, nobis odio velit a possimus!
+      Omnis blanditiis earum cupiditate sunt, vitae soluta obcaecati dicta atque
+      eius, accusamus itaque numquam error possimus consequuntur expedita ut
+      nulla hic totam consequatur maiores at ipsum non, voluptates nihil? Quae
+      excepturi modi blanditiis molestiae quis maxime. Dignissimos optio ea,
+      deserunt doloremque ipsam recusandae itaque tenetur! Ratione, ipsa,
+      quaerat quis recusandae sapiente ullam porro labore assumenda, quibusdam
+      tempore optio.
+    </div>
+
+    <h2>box-sizing: border-box:</h2>
+    <p>
+      Width and height apply to all parts of the element: content, padding and
+      borders:
+    </p>
+    <div id="example2">Here, the full width is 300px, no matter what!</div>
   </body>
 </html>

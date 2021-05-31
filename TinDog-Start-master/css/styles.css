@@ -21,6 +21,7 @@ h1 {
 
 #button:hover {
   box-shadow: 0 0 2px 2px pink;
+  /* box-decoration-break: clone; */
 }
 
 input[type="submit"]:hover {
