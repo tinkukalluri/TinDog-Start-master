@@ -10,3 +10,25 @@ h1 {
   line-height: 1.5;
   font-size: 3rem;
 }
+
+.container-fluid {
+  padding: 2% 15%;
+}
+
+#button {
+  box-shadow: 0 0 2px 2px blue;
+}
+
+#button:hover {
+  box-shadow: 0 0 2px 2px pink;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 0 2px 2px pink;
+  background-color: green;
+}
+
+input[type="search"]:hover {
+  box-shadow: 0 0 2px 2px pink;
+  background-color: orange;
+}
